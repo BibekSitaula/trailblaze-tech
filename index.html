@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrailBlaze Tech — IT Solutions That Move Fast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#" class="logo">
+        <span class="logo-mark">▶</span>
+        TrailBlaze<span class="logo-accent">Tech</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-nav">Get a Quote</a>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot pulse"></span>
+        Infrastructure-first IT company
+      </div>
+      <h1 class="hero-headline">
+        We build the rails<br />
+        <span class="headline-accent">your team runs on.</span>
+      </h1>
+      <p class="hero-sub">
+        DevOps pipelines, IT support, infrastructure management — engineered for teams that can't afford downtime.
+      </p>
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-primary">Explore Services</a>
+        <a href="#contact" class="btn btn-ghost">Talk to an Engineer →</a>
+      </div>
+
+      <!-- Terminal widget — the signature element -->
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">trailblaze@deploy ~ zsh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd" id="terminal-text"></span><span class="t-cursor">█</span></div>
+          <div class="t-line output" id="terminal-output"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">99.9<span class="stat-unit">%</span></span>
+        <span class="stat-label">Uptime SLA</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">< 4<span class="stat-unit">hrs</span></span>
+        <span class="stat-label">Avg Response Time</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">150<span class="stat-unit">+</span></span>
+        <span class="stat-label">Systems Managed</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">8<span class="stat-unit">yrs</span></span>
+        <span class="stat-label">In the Field</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What we do</span>
+        <h2>Built for the full stack of IT</h2>
+        <p class="section-desc">From a single support ticket to enterprise-scale infrastructure — we have the depth to handle it.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card card-featured">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="12" width="40" height="6" rx="2" fill="currentColor" opacity=".2"/>
+              <rect x="4" y="22" width="40" height="6" rx="2" fill="currentColor" opacity=".4"/>
+              <rect x="4" y="32" width="40" height="6" rx="2" fill="currentColor"/>
+              <circle cx="38" cy="15" r="3" fill="#F59E0B"/>
+              <circle cx="38" cy="25" r="3" fill="#22C55E"/>
+            </svg>
+          </div>
+          <span class="service-tag">Core</span>
+          <h3>DevOps & CI/CD</h3>
+          <p>We design and implement automated pipelines that take code from commit to production safely. Docker, Kubernetes, GitHub Actions, ArgoCD — your stack, our expertise.</p>
+          <ul class="service-features">
+            <li>Pipeline design & implementation</li>
+            <li>Container orchestration (K8s)</li>
+            <li>GitOps workflows</li>
+            <li>Rollback & release strategies</li>
+          </ul>
+          <a href="#contact" class="service-link">Start a project →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="22" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 38h16M24 30v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 18l4 4 8-8" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>IT Support</h3>
+          <p>Responsive, knowledgeable support that treats your team's time as a resource. Helpdesk, hardware, software, and everything in between.</p>
+          <ul class="service-features">
+            <li>Tier 1–3 helpdesk support</li>
+            <li>Endpoint management</li>
+            <li>SLA-backed response times</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 18h36" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="18" cy="14" r="1.5" fill="currentColor"/>
+              <path d="M14 28h20M14 33h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Infrastructure Management</h3>
+          <p>Proactive management of your cloud or on-prem infrastructure. We monitor, optimize, and scale so you don't have to think about it.</p>
+          <ul class="service-features">
+            <li>AWS / Azure / GCP management</li>
+            <li>24/7 monitoring & alerting</li>
+            <li>Capacity planning</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L6 15v9c0 9.4 7.7 18.2 18 20 10.3-1.8 18-10.6 18-20v-9L24 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M17 24l5 5 9-10" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Security & Compliance</h3>
+          <p>Harden your systems, audit your vulnerabilities, and meet compliance requirements with confidence. Security isn't a feature — it's the foundation.</p>
+          <ul class="service-features">
+            <li>Vulnerability assessments</li>
+            <li>SOC 2 / ISO 27001 readiness</li>
+            <li>Zero-trust architecture</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 36c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M36 28l4 4M12 28l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Cloud Migration</h3>
+          <p>Move workloads to the cloud without the chaos. We plan, execute, and validate migrations with minimal disruption and maximum reliability.</p>
+          <ul class="service-features">
+            <li>Lift-and-shift & re-architecture</li>
+            <li>Cost optimization</li>
+            <li>Post-migration support</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="26" y="6" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="6" y="26" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="26" y="26" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 22v4M34 22v4M22 14h4M22 34h4" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Network & Connectivity</h3>
+          <p>Design and manage networks that hold up under pressure. LAN/WAN, VPNs, SD-WAN, firewalls — built for reliability from the ground up.</p>
+          <ul class="service-features">
+            <li>Network design & deployment</li>
+            <li>VPN & remote access</li>
+            <li>Firewall management</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-left">
+          <span class="eyebrow">Why TrailBlaze Tech</span>
+          <h2>We treat your infrastructure like our own.</h2>
+          <p>Most IT firms show up after something breaks. We build systems that make breakage rare, and when it does happen — we're already on it.</p>
+          <a href="#contact" class="btn btn-primary">Work with us</a>
+        </div>
+        <div class="why-right">
+          <div class="why-card">
+            <div class="why-icon amber">⚡</div>
+            <div>
+              <h4>Engineers, not order-takers</h4>
+              <p>Every engagement is led by senior engineers who understand your stack and push back when something could be better.</p>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon blue">🔭</div>
+            <div>
+              <h4>Observability by default</h4>
+              <p>We instrument everything. You always know the health of your systems — dashboards, alerts, and runbooks included.</p>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon green">🔄</div>
+            <div>
+              <h4>Async-first communication</h4>
+              <p>Documentation-driven, minimal meetings. You get a clear record of every decision and change in your systems.</p>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-icon purple">🛡️</div>
+            <div>
+              <h4>Security baked in, not bolted on</h4>
+              <p>Every solution we design starts with a threat model. Security isn't an add-on — it's the default.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">How we work</span>
+        <h2>From scoping call to running system</h2>
+      </div>
+      <div class="process-track">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h4>Discovery</h4>
+            <p>We audit your current setup, understand your constraints, and identify the highest-leverage improvements.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h4>Architecture</h4>
+            <p>We design a solution with detailed diagrams, cost estimates, and a risk analysis before a single line of config is written.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h4>Implementation</h4>
+            <p>Staged rollout with testing gates at each phase. Nothing reaches production without validation.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h4>Handoff & Support</h4>
+            <p>Full documentation, runbooks, and ongoing support. We transfer knowledge — not dependency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK TICKER -->
+  <section class="ticker-section">
+    <div class="ticker-label">Technologies we work with</div>
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <span class="ticker-item">Kubernetes</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Docker</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Terraform</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">AWS</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Azure</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">GCP</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Ansible</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">GitHub Actions</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">ArgoCD</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Prometheus</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Grafana</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Nginx</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Helm</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Linux</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Vault</span>
+        <span class="ticker-sep">·</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker-item">Kubernetes</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Docker</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Terraform</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">AWS</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Azure</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">GCP</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Ansible</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">GitHub Actions</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">ArgoCD</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Prometheus</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Grafana</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Nginx</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Helm</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Linux</span>
+        <span class="ticker-sep">·</span>
+        <span class="ticker-item">Vault</span>
+        <span class="ticker-sep">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The people behind the work</span>
+        <h2>Our Team</h2>
+        <p class="section-desc">Four directors, one mission — building IT infrastructure that teams can rely on.</p>
+      </div>
+      <div class="team-grid">
+
+        <!-- MEMBER 1 -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <!-- ✏️ Replace src with: images/bibek.jpg -->
+            <img src="images/bibek.jpeg" alt="Bibek Sitaula" class="team-photo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Bibek Sitaula</h3>
+            <span class="team-role">Director &amp; Team Lead</span>
+            <div class="team-tags">
+              <span class="tag">DevOps</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Kubernetes</span>
+            </div>
+            <!-- ✏️ Edit intro below -->
+            <p class="team-bio">Bibek leads the team with a strong background in DevOps engineering, driving automation and delivery pipelines that keep client systems moving fast and staying stable.</p>
+          </div>
+        </div>
+
+        <!-- MEMBER 2 -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <!-- ✏️ Replace src with: images/birendra.jpg -->
+            <img src="images/birendra.jpeg" alt="Birendra Dahal" class="team-photo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Birendra Dahal</h3>
+            <span class="team-role">Director &amp; Infrastructure Engineer</span>
+            <div class="team-tags">
+              <span class="tag">Cloud</span>
+              <span class="tag">Networking</span>
+              <span class="tag">Terraform</span>
+            </div>
+            <!-- ✏️ Edit intro below -->
+            <p class="team-bio">Birendra architects and manages large-scale infrastructure across cloud and on-prem environments, ensuring every system is resilient, secure, and built to scale.</p>
+          </div>
+        </div>
+
+        <!-- MEMBER 3 -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <!-- ✏️ Replace src with: images/yougesh.jpg -->
+            <img src="images/yougesh.jpeg" alt="Yougesh" class="team-photo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Yougesh</h3>
+            <span class="team-role">Director &amp; Backend Developer</span>
+            <div class="team-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">APIs</span>
+            </div>
+            <!-- ✏️ Edit intro below -->
+            <p class="team-bio">Yougesh brings deep backend engineering expertise in Python and Java, building the server-side systems and integrations that power TrailBlaze Tech's client solutions.</p>
+          </div>
+        </div>
+
+        <!-- MEMBER 4 -->
+        <div class="team-card">
+          <div class="team-photo-wrap">
+            <!-- ✏️ Replace src with: images/prashanna.jpg -->
+            <img src="images/prasanna.jpeg" alt="Prashanna Subedi" class="team-photo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top;" />
+            <div class="team-socials">
+              <a href="#" aria-label="LinkedIn">in</a>
+              <a href="#" aria-label="GitHub">gh</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Prashanna Subedi</h3>
+            <span class="team-role">Director &amp; Engineering Lead</span>
+            <div class="team-tags">
+              <span class="tag">Engineering</span>
+              <span class="tag">Architecture</span>
+              <span class="tag">Leadership</span>
+            </div>
+            <!-- ✏️ Edit intro below -->
+            <p class="team-bio">Prashanna oversees engineering direction and technical strategy, bridging the gap between complex infrastructure challenges and practical, maintainable solutions for clients.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Ready to build something solid?</h2>
+          <p>Tell us about your infrastructure challenges. We'll get back to you within one business day with a clear next step — no sales deck, just a real conversation.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <a href="mailto:hello@trailblazetech.io">hello@trailblazetech.io</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <a href="tel:+15550192837">+1 (555) 019-2837</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>San Francisco, CA · Remote-first</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form-wrap">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" placeholder="Jane Smith" />
+            </div>
+            <div class="form-group">
+              <label for="email">Work email</label>
+              <input type="email" id="email" placeholder="jane@company.com" />
+            </div>
+            <div class="form-group">
+              <label for="service">What do you need?</label>
+              <select id="service">
+                <option value="" disabled selected>Select a service</option>
+                <option>DevOps & CI/CD</option>
+                <option>IT Support</option>
+                <option>Infrastructure Management</option>
+                <option>Cloud Migration</option>
+                <option>Security & Compliance</option>
+                <option>Network & Connectivity</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us more</label>
+              <textarea id="message" rows="4" placeholder="Describe your current setup and what's not working..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="handleSubmit()">Send Message</button>
+            <p class="form-note">We respond within 1 business day. No spam, ever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-mark">▶</span>
+            TrailBlaze<span class="logo-accent">Tech</span>
+          </a>
+          <p>Infrastructure-first IT solutions for teams that move fast and can't afford to break things.</p>
+        </div>
+        <div class="footer-links-group">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">DevOps & CI/CD</a></li>
+            <li><a href="#services">IT Support</a></li>
+            <li><a href="#services">Infra Management</a></li>
+            <li><a href="#services">Cloud Migration</a></li>
+            <li><a href="#services">Security</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#why">About</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 TrailBlaze Tech. All rights reserved.</span>
+        <span>Built with ❤️ and a lot of YAML</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
