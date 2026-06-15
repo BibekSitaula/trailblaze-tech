@@ -22,6 +22,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#why">Why Us</a></li>
         <li><a href="#process">Process</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#team">Our Team</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -375,6 +376,246 @@
     </div>
   </section>
 
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What we've built</span>
+        <h2>Our Portfolio</h2>
+        <p class="section-desc">Real projects, real clients, real results — across every service we offer.</p>
+      </div>
+
+      <!-- TABS -->
+      <div class="portfolio-tabs">
+        <button class="ptab active" onclick="switchTab('digital-marketing', this)">Digital Marketing</button>
+        <button class="ptab" onclick="switchTab('devops', this)">DevOps Services</button>
+        <button class="ptab" onclick="switchTab('it-support', this)">IT Support</button>
+        <button class="ptab" onclick="switchTab('software', this)">Software &amp; Apps</button>
+        <button class="ptab" onclick="switchTab('others', this)">Others</button>
+      </div>
+
+      <!-- ===== DIGITAL MARKETING ===== -->
+      <div class="portfolio-panel active" id="tab-digital-marketing">
+        <div class="portfolio-grid">
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">📁</span> Projects Done</h4>
+            <div class="project-list">
+              <div class="project-item clickable" onclick="openModal('dm1')">
+                <div class="project-header"><span class="project-name">Brand Awareness Campaign</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Full-funnel digital campaign across Google Ads, Meta, and LinkedIn for a B2B SaaS client. Delivered 3x lead growth in 90 days.</p>
+                <div class="project-meta"><span>📅 Q1 2024</span><span>⏱ 3 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('dm2')">
+                <div class="project-header"><span class="project-name">E-commerce SEO Overhaul</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Technical SEO audit and content strategy for a retail e-commerce store, resulting in 180% increase in organic traffic.</p>
+                <div class="project-meta"><span>📅 Q3 2023</span><span>⏱ 6 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('dm3')">
+                <div class="project-header"><span class="project-name">Social Media Revamp</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Redesigned social strategy for a fintech brand — grew Instagram following by 420% and improved engagement rate from 0.8% to 4.2%.</p>
+                <div class="project-meta"><span>📅 Q2 2023</span><span>⏱ 4 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">🏢</span> Companies We Served</h4>
+            <div class="companies-grid">
+              <div class="company-card"><div class="company-logo">NX</div><div class="company-info"><span class="company-name">NexaCorp</span><span class="company-industry">SaaS / B2B</span></div></div>
+              <div class="company-card"><div class="company-logo">RV</div><div class="company-info"><span class="company-name">RetailVista</span><span class="company-industry">E-commerce</span></div></div>
+              <div class="company-card"><div class="company-logo">BF</div><div class="company-info"><span class="company-name">BrightFlow</span><span class="company-industry">Fintech</span></div></div>
+              <div class="company-card"><div class="company-logo">UP</div><div class="company-info"><span class="company-name">UrbanPulse</span><span class="company-industry">Real Estate</span></div></div>
+            </div>
+          </div>
+          <div class="portfolio-block full-width">
+            <h4 class="block-title"><span class="block-icon">💬</span> What Clients Say</h4>
+            <div class="testimonials-grid">
+              <div class="testimonial-card"><p class="testimonial-text">"TrailBlaze Tech transformed our digital presence. Within three months we saw qualified leads triple and our cost-per-acquisition drop significantly."</p><div class="testimonial-author"><div class="author-avatar">AK</div><div><span class="author-name">Alex Kim</span><span class="author-role">CMO, NexaCorp</span></div></div></div>
+              <div class="testimonial-card"><p class="testimonial-text">"The SEO work they did was methodical and transparent. We finally understand what's driving traffic and how to keep growing it."</p><div class="testimonial-author"><div class="author-avatar">SR</div><div><span class="author-name">Sara Reddy</span><span class="author-role">Head of Growth, RetailVista</span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== DEVOPS ===== -->
+      <div class="portfolio-panel" id="tab-devops">
+        <div class="portfolio-grid">
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">📁</span> Projects Done</h4>
+            <div class="project-list">
+              <div class="project-item clickable" onclick="openModal('dv1')">
+                <div class="project-header"><span class="project-name">Kubernetes Migration</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Migrated a monolithic Node.js app to microservices on Kubernetes. Deployment time dropped from 2 hours to 8 minutes.</p>
+                <div class="project-meta"><span>📅 Q2 2024</span><span>⏱ 4 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('dv2')">
+                <div class="project-header"><span class="project-name">CI/CD Pipeline Buildout</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Full GitOps pipeline with GitHub Actions, ArgoCD, and automated rollback for a fintech startup. Zero failed releases in first 6 months.</p>
+                <div class="project-meta"><span>📅 Q4 2023</span><span>⏱ 6 weeks</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('dv3')">
+                <div class="project-header"><span class="project-name">Multi-Cloud Infra Setup</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Provisioned and managed a multi-cloud environment across AWS and Azure using Terraform, reducing infra costs by 34%.</p>
+                <div class="project-meta"><span>📅 Q1 2024</span><span>⏱ 3 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">🏢</span> Companies We Served</h4>
+            <div class="companies-grid">
+              <div class="company-card"><div class="company-logo">PX</div><div class="company-info"><span class="company-name">Proxima Labs</span><span class="company-industry">Cloud / SaaS</span></div></div>
+              <div class="company-card"><div class="company-logo">VF</div><div class="company-info"><span class="company-name">VaultFin</span><span class="company-industry">Fintech</span></div></div>
+              <div class="company-card"><div class="company-logo">DL</div><div class="company-info"><span class="company-name">DataLoop</span><span class="company-industry">Data Engineering</span></div></div>
+              <div class="company-card"><div class="company-logo">CW</div><div class="company-info"><span class="company-name">CloudWave</span><span class="company-industry">Infrastructure</span></div></div>
+            </div>
+          </div>
+          <div class="portfolio-block full-width">
+            <h4 class="block-title"><span class="block-icon">💬</span> What Clients Say</h4>
+            <div class="testimonials-grid">
+              <div class="testimonial-card"><p class="testimonial-text">"They rebuilt our entire deployment pipeline in under two months. Our engineers went from dreading releases to shipping multiple times a day with confidence."</p><div class="testimonial-author"><div class="author-avatar">JM</div><div><span class="author-name">James Moore</span><span class="author-role">CTO, Proxima Labs</span></div></div></div>
+              <div class="testimonial-card"><p class="testimonial-text">"The Kubernetes migration was smoother than I thought possible. Zero downtime, clear documentation, and they trained our team throughout the process."</p><div class="testimonial-author"><div class="author-avatar">PN</div><div><span class="author-name">Priya Nair</span><span class="author-role">VP Engineering, VaultFin</span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== IT SUPPORT ===== -->
+      <div class="portfolio-panel" id="tab-it-support">
+        <div class="portfolio-grid">
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">📁</span> Projects Done</h4>
+            <div class="project-list">
+              <div class="project-item clickable" onclick="openModal('it1')">
+                <div class="project-header"><span class="project-name">Managed IT — 200-seat Office</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">End-to-end IT support for a 200-person office including helpdesk, endpoint management, and hardware. Maintained 99.7% uptime.</p>
+                <div class="project-meta"><span>📅 2023–2024</span><span>⏱ 12 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('it2')">
+                <div class="project-header"><span class="project-name">Remote Workforce Rollout</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Deployed laptops, VPNs, and remote access tools for a 60-person team across 8 countries in just 3 weeks with no major issues.</p>
+                <div class="project-meta"><span>📅 Q1 2023</span><span>⏱ 3 weeks</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('it3')">
+                <div class="project-header"><span class="project-name">Helpdesk SLA Turnaround</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Took over a struggling helpdesk with 72hr average resolution time and brought it down to under 4 hours within the first 60 days.</p>
+                <div class="project-meta"><span>📅 Q3 2023</span><span>⏱ 6 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">🏢</span> Companies We Served</h4>
+            <div class="companies-grid">
+              <div class="company-card"><div class="company-logo">HS</div><div class="company-info"><span class="company-name">HealthSync</span><span class="company-industry">Healthcare</span></div></div>
+              <div class="company-card"><div class="company-logo">TG</div><div class="company-info"><span class="company-name">TerraGroup</span><span class="company-industry">Construction</span></div></div>
+              <div class="company-card"><div class="company-logo">EM</div><div class="company-info"><span class="company-name">EduMatrix</span><span class="company-industry">EdTech</span></div></div>
+              <div class="company-card"><div class="company-logo">NL</div><div class="company-info"><span class="company-name">NomadLabs</span><span class="company-industry">Remote-first Startup</span></div></div>
+            </div>
+          </div>
+          <div class="portfolio-block full-width">
+            <h4 class="block-title"><span class="block-icon">💬</span> What Clients Say</h4>
+            <div class="testimonials-grid">
+              <div class="testimonial-card"><p class="testimonial-text">"Our previous IT support felt reactive and slow. TrailBlaze Tech is the opposite — proactive, fast, and they actually explain what they're doing."</p><div class="testimonial-author"><div class="author-avatar">LC</div><div><span class="author-name">Linda Chen</span><span class="author-role">COO, HealthSync</span></div></div></div>
+              <div class="testimonial-card"><p class="testimonial-text">"Getting 60 remote employees set up across different countries in three weeks sounded impossible. They made it happen without a single major hiccup."</p><div class="testimonial-author"><div class="author-avatar">TO</div><div><span class="author-name">Tom Okafor</span><span class="author-role">CEO, NomadLabs</span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SOFTWARE & APPS ===== -->
+      <div class="portfolio-panel" id="tab-software">
+        <div class="portfolio-grid">
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">📁</span> Projects Done</h4>
+            <div class="project-list">
+              <div class="project-item clickable" onclick="openModal('sw1')">
+                <div class="project-header"><span class="project-name">Inventory Management System</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Full-stack inventory and warehouse management in Python/Django with real-time tracking and automated reorder alerts.</p>
+                <div class="project-meta"><span>📅 Q3 2024</span><span>⏱ 5 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('sw2')">
+                <div class="project-header"><span class="project-name">Client Portal — Java Spring</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Secure client-facing portal with role-based access, reporting dashboards, and document management built on Java Spring Boot.</p>
+                <div class="project-meta"><span>📅 Q1 2024</span><span>⏱ 4 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('sw3')">
+                <div class="project-header"><span class="project-name">Booking &amp; Scheduling App</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Mobile-friendly booking application with calendar sync, automated reminders, and payment integration for a healthcare provider.</p>
+                <div class="project-meta"><span>📅 Q4 2023</span><span>⏱ 3 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">🏢</span> Companies We Served</h4>
+            <div class="companies-grid">
+              <div class="company-card"><div class="company-logo">WH</div><div class="company-info"><span class="company-name">WareHouse Pro</span><span class="company-industry">Logistics</span></div></div>
+              <div class="company-card"><div class="company-logo">CF</div><div class="company-info"><span class="company-name">ClientFirst</span><span class="company-industry">Professional Services</span></div></div>
+              <div class="company-card"><div class="company-logo">AG</div><div class="company-info"><span class="company-name">AgroTech</span><span class="company-industry">AgriTech</span></div></div>
+              <div class="company-card"><div class="company-logo">MV</div><div class="company-info"><span class="company-name">MediVault</span><span class="company-industry">HealthTech</span></div></div>
+            </div>
+          </div>
+          <div class="portfolio-block full-width">
+            <h4 class="block-title"><span class="block-icon">💬</span> What Clients Say</h4>
+            <div class="testimonials-grid">
+              <div class="testimonial-card"><p class="testimonial-text">"The inventory system replaced three spreadsheets we were juggling. It's fast, reliable, and our warehouse team actually enjoys using it."</p><div class="testimonial-author"><div class="author-avatar">RB</div><div><span class="author-name">Ryan Brooks</span><span class="author-role">Operations Director, WareHouse Pro</span></div></div></div>
+              <div class="testimonial-card"><p class="testimonial-text">"Security and performance were our top concerns for the portal. TrailBlaze delivered on both and the codebase is clean and well documented."</p><div class="testimonial-author"><div class="author-avatar">FD</div><div><span class="author-name">Fiona Dawson</span><span class="author-role">CTO, ClientFirst</span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== OTHERS ===== -->
+      <div class="portfolio-panel" id="tab-others">
+        <div class="portfolio-grid">
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">📁</span> Projects Done</h4>
+            <div class="project-list">
+              <div class="project-item clickable" onclick="openModal('ot1')">
+                <div class="project-header"><span class="project-name">Data Analytics Dashboard</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Real-time BI dashboard pulling from multiple data sources, giving leadership live visibility into KPIs and operational metrics.</p>
+                <div class="project-meta"><span>📅 Q2 2023</span><span>⏱ 2 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('ot2')">
+                <div class="project-header"><span class="project-name">IT Training Program</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Designed and delivered a 6-week internal IT training for a 40-person non-technical team covering security best practices and tooling.</p>
+                <div class="project-meta"><span>📅 Q4 2022</span><span>⏱ 6 weeks</span><span class="project-cta">View Details →</span></div>
+              </div>
+              <div class="project-item clickable" onclick="openModal('ot3')">
+                <div class="project-header"><span class="project-name">Vendor Management Portal</span><span class="project-badge done">Completed</span></div>
+                <p class="project-desc">Built a centralized vendor tracking and procurement portal that reduced approval cycles by 60% for a 500-person enterprise client.</p>
+                <div class="project-meta"><span>📅 Q1 2023</span><span>⏱ 3 months</span><span class="project-cta">View Details →</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-block">
+            <h4 class="block-title"><span class="block-icon">🏢</span> Companies We Served</h4>
+            <div class="companies-grid">
+              <div class="company-card"><div class="company-logo">IC</div><div class="company-info"><span class="company-name">InsightCo</span><span class="company-industry">Analytics</span></div></div>
+              <div class="company-card"><div class="company-logo">GF</div><div class="company-info"><span class="company-name">GreenField</span><span class="company-industry">Non-profit</span></div></div>
+              <div class="company-card"><div class="company-logo">SK</div><div class="company-info"><span class="company-name">SkillBridge</span><span class="company-industry">EdTech</span></div></div>
+              <div class="company-card"><div class="company-logo">OX</div><div class="company-info"><span class="company-name">OxfordTech</span><span class="company-industry">Consulting</span></div></div>
+            </div>
+          </div>
+          <div class="portfolio-block full-width">
+            <h4 class="block-title"><span class="block-icon">💬</span> What Clients Say</h4>
+            <div class="testimonials-grid">
+              <div class="testimonial-card"><p class="testimonial-text">"The dashboard gave us data visibility we never had before. Decision-making at the leadership level changed completely within the first month."</p><div class="testimonial-author"><div class="author-avatar">MJ</div><div><span class="author-name">Marcus Johnson</span><span class="author-role">CEO, InsightCo</span></div></div></div>
+              <div class="testimonial-card"><p class="testimonial-text">"The IT training was practical, not theoretical. Our team walked away with skills they actually use every day and confidence they didn't have before."</p><div class="testimonial-author"><div class="author-avatar">HW</div><div><span class="author-name">Hannah White</span><span class="author-role">HR Director, GreenField</span></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="projectModal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModalDirect()">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
   <!-- TEAM -->
   <section class="team" id="team">
     <div class="container">
@@ -455,27 +696,7 @@
         </div>
 
         <!-- MEMBER 4 -->
-        <div class="team-card">
-          <div class="team-photo-wrap">
-            <!-- ✏️ Replace src with: images/prashanna.jpg -->
-            <img src="images/prasanna.jpeg" alt="Prashanna Subedi" class="team-photo" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center top;" />
-            <div class="team-socials">
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="GitHub">gh</a>
-            </div>
-          </div>
-          <div class="team-info">
-            <h3 class="team-name">Prashanna Subedi</h3>
-            <span class="team-role">Director &amp; Engineering Lead</span>
-            <div class="team-tags">
-              <span class="tag">Engineering</span>
-              <span class="tag">Architecture</span>
-              <span class="tag">Leadership</span>
-            </div>
-            <!-- ✏️ Edit intro below -->
-            <p class="team-bio">Prashanna oversees engineering direction and technical strategy, bridging the gap between complex infrastructure challenges and practical, maintainable solutions for clients.</p>
-          </div>
-        </div>
+    
 
       </div>
     </div>
@@ -492,15 +713,15 @@
           <div class="contact-details">
             <div class="contact-item">
               <span class="contact-icon">📧</span>
-              <a href="mailto:hello@trailblazetech.io">hello@trailblazetech.io</a>
+              <a href="mailto:hello@trailblazetech.io">info@trailblazetech.com</a>
             </div>
             <div class="contact-item">
               <span class="contact-icon">📞</span>
-              <a href="tel:+15550192837">+1 (555) 019-2837</a>
+              <a href="tel:+15550192837">+977 9813825117</a>
             </div>
             <div class="contact-item">
               <span class="contact-icon">📍</span>
-              <span>San Francisco, CA · Remote-first</span>
+              <span>Kathmandu, Nepal</span>
             </div>
           </div>
         </div>
@@ -578,7 +799,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 TrailBlaze Tech. All rights reserved.</span>
+        <span>© 2026 TrailBlaze Tech. All rights reserved.</span>
         <span>Built with ❤️ and a lot of YAML</span>
       </div>
     </div>
